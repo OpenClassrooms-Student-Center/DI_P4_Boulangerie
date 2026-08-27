@@ -1,0 +1,91 @@
+.checkout-layout {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.checkout-form {
+  width: 770px;
+  height: 558px;
+  padding: 24px;
+}
+
+.form-row {
+  display: flex;
+  gap: 26px;
+  margin-bottom: 20px;
+}
+
+.form-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-block {
+  margin-bottom: 20px;
+}
+
+.payment-note {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  margin-bottom: 26px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.checkout-recap {
+  width: 472px;
+  height: 386px;
+  padding: 24px;
+}
+
+.checkout-recap-title {
+  margin-bottom: 31px;
+}
+
+.recap-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.recap-line span:last-child {
+  font-weight: 700;
+  width: 88px;
+  text-align: left;
+}
+
+.checkout-recap .divider {
+  margin: 0 0 25px;
+}
+
+.recap-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.recap-total-label {
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 700;
+}
+
+.recap-total-value {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.recap-pickup {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les produits du jour — Les petits pains chauds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages/catalogue.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-brand">
+        <div class="header-brand-name">Les petits pains chauds</div>
+        <div class="header-brand-owner">Boulangerie de Floriane Teissière</div>
+      </div>
+      <nav class="header-nav">
+        <a class="btn btn--nav" href="index.html">Catalogue</a>
+        <a class="btn btn--secondary btn--nav" href="panier.html">Panier</a>
+        <a class="btn btn--secondary btn--nav" href="validation-commande.html">Commande</a>
+      </nav>
+    </header>
+
+    <main class="page-body">
+      <span class="badge badge--epic">EPIC · Catalogue</span>
+      <h1 class="t-display page-title">Les produits du jour</h1>
+      <p class="t-intro page-intro">Commandez aujourd’hui et choisissez votre heure de retrait à la boulangerie.</p>
+
+      <section class="product-grid">
+        <article class="card product-card">
+          <img class="product-card-photo" src="assets/baguette.png" alt="Baguette tradition">
+          <h2 class="product-card-name">Baguette tradition</h2>
+          <p class="product-card-desc">Farine label rouge, levain naturel.</p>
+          <div class="product-card-meta">
+            <span class="product-card-price">1,20 €</span>
+            <span class="badge badge--available">Disponible</span>
+          </div>
+          <a class="btn" href="panier.html">Ajouter au panier</a>
+        </article>
+
+        <article class="card product-card">
+          <img class="product-card-photo" src="assets/croissant.png" alt="Croissant pur beurre">
+          <h2 class="product-card-name">Croissant pur beurre</h2>
+          <p class="product-card-desc">Feuilletage maison, beurre AOP.</p>
+          <div class="product-card-meta">
+            <span class="product-card-price">1,40 €</span>
+            <span class="badge badge--available">Disponible</span>
+          </div>
+          <a class="btn" href="panier.html">Ajouter au panier</a>
+        </article>
+
+        <article class="card product-card">
+          <img class="product-card-photo" src="assets/pain-campagne.png" alt="Pain de campagne">
+          <h2 class="product-card-name">Pain de campagne</h2>
+          <p class="product-card-desc">Levain, seigle et mie généreuse.</p>
+          <div class="product-card-meta">
+            <span class="product-card-price">4,80 €</span>
+            <span class="badge badge--warning">Bientôt épuisé</span>
+          </div>
+          <a class="btn" href="panier.html">Ajouter au panier</a>
+        </article>
+
+        <article class="card product-card">
+          <img class="product-card-photo" src="assets/pain-graines.png" alt="Pain aux graines">
+          <h2 class="product-card-name">Pain aux graines</h2>
+          <p class="product-card-desc">Tournesol, lin et courge.</p>
+          <div class="product-card-meta">
+            <span class="product-card-price">5,20 €</span>
+            <span class="badge badge--unavailable">Indisponible</span>
+          </div>
+          <button class="btn btn--disabled" type="button" disabled>Ajouter au panier</button>
+        </article>
+      </section>
+
+      <aside class="card info-bar">
+        <div class="info-bar-copy">
+          <p class="info-bar-title">Retrait au comptoir</p>
+          <p class="info-bar-text">Choisissez votre créneau au moment de valider la commande. Paiement sur place lors du retrait.</p>
+        </div>
+        <a class="btn" href="panier.html">Voir mon panier · 3</a>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,431 @@
+/* Les petits pains chauds — design system (frame 00) */
+
+:root {
+  --color-beige-100: #f3ebdd;
+  --color-blue-500: #b2cffb;
+  --color-brown-900: #4c2415;
+  --color-taupe-500: #8a8174;
+  --color-white: #ffffff;
+  --color-orange-300: #fad7a0;
+  --color-red-300: #f6c1bc;
+
+  --bg-app: var(--color-beige-100);
+  --bg-surface: var(--color-white);
+  --bg-accent: var(--color-blue-500);
+  --text-primary: var(--color-brown-900);
+  --border-default: var(--color-taupe-500);
+  --action-primary: var(--color-brown-900);
+  --action-on-primary: var(--color-beige-100);
+  --status-available: var(--color-blue-500);
+  --status-warning: var(--color-orange-300);
+  --status-unavailable: var(--color-red-300);
+
+  --font: "Montserrat", sans-serif;
+
+  --display-size: 36px;
+  --display-line: 44px;
+  --heading-size: 24px;
+  --heading-line: 32px;
+  --body-size: 16px;
+  --body-line: 24px;
+  --label-size: 14px;
+  --label-line: 20px;
+
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-15: 15px;
+  --radius-16: 16px;
+  --radius-full: 999px;
+
+  --page-width: 1440px;
+  --page-height: 960px;
+  --content-width: 1290px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  font-weight: 400;
+  color: var(--text-primary);
+  background: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.page {
+  width: var(--page-width);
+  min-height: var(--page-height);
+  margin: 0 auto;
+  background: var(--bg-app);
+  position: relative;
+}
+
+/* Typography */
+.t-display {
+  font-size: var(--display-size);
+  line-height: var(--display-line);
+  font-weight: 700;
+  margin: 0;
+}
+
+.t-heading {
+  font-size: var(--heading-size);
+  line-height: var(--heading-line);
+  font-weight: 700;
+  margin: 0;
+}
+
+.t-body {
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  font-weight: 400;
+  margin: 0;
+}
+
+.t-label {
+  font-size: var(--label-size);
+  line-height: var(--label-line);
+  font-weight: 700;
+  margin: 0;
+}
+
+.t-intro {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  height: 88px;
+  padding: 18px 20px 18px 64px;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.header-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-brand-name {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.header-brand-owner {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.header-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: var(--radius-6);
+  border: 1px solid transparent;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--action-primary);
+  color: var(--action-on-primary);
+  border-color: var(--action-primary);
+  white-space: nowrap;
+}
+
+.btn:hover {
+  filter: brightness(1.08);
+}
+
+.btn--secondary {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--border-default);
+}
+
+.btn--secondary:hover {
+  filter: none;
+  background: var(--bg-app);
+}
+
+.btn--disabled,
+.btn:disabled {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--border-default);
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn--nav {
+  height: 44px;
+  padding: 0 16px;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 14px;
+  border-radius: var(--radius-15);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  border: none;
+}
+
+.badge--available,
+.badge--ready,
+.badge--picked {
+  background: var(--status-available);
+}
+
+.badge--warning {
+  background: var(--status-warning);
+}
+
+.badge--unavailable {
+  background: var(--status-unavailable);
+}
+
+.badge--epic {
+  height: 32px;
+  padding: 0 16px;
+  border-radius: var(--radius-16);
+  background: var(--bg-accent);
+  font-size: 13px;
+  line-height: 16px;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-8);
+}
+
+.card--soft {
+  background: var(--bg-app);
+  border: none;
+  border-radius: var(--radius-6);
+}
+
+/* Form */
+.field-label {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-6);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.input {
+  height: 52px;
+  padding: 0 14px;
+}
+
+.textarea {
+  min-height: 112px;
+  padding: 14px;
+  resize: vertical;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: 2px solid var(--color-blue-500);
+  outline-offset: 0;
+}
+
+/* Quantity stepper */
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-6);
+}
+
+.stepper--compact {
+  width: 126px;
+  height: 46px;
+  padding: 0 12px;
+}
+
+.stepper--large {
+  width: 190px;
+  height: 48px;
+  padding: 0 18px;
+}
+
+.stepper-btn {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepper-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.stepper-value {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 700;
+  min-width: 1.2em;
+  text-align: center;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 50px;
+  padding: 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-6);
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 124px;
+  height: 38px;
+  padding: 0 12px;
+  border: none;
+  border-radius: var(--radius-4);
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tab.is-active {
+  background: var(--action-primary);
+  color: var(--action-on-primary);
+}
+
+/* Page shell */
+.page-body {
+  padding: 32px 64px 48px;
+}
+
+.page-kicker {
+  margin-bottom: 32px;
+}
+
+.page-title {
+  margin: 32px 0 8px;
+}
+
+.page-intro {
+  margin: 0 0 32px;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border-default);
+  border: none;
+  margin: 0;
+}
+
+.row-alt {
+  background: var(--bg-app);
+}
+
+.row-plain {
+  background: var(--bg-surface);
+}

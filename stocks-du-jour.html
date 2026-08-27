@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stocks des pains du jour — Les petits pains chauds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages/stocks.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-brand">
+        <div class="header-brand-name">Les petits pains chauds</div>
+        <div class="header-brand-owner">Boulangerie de Floriane Teissière</div>
+      </div>
+      <nav class="header-nav">
+        <a class="btn btn--secondary btn--nav" href="vue-cuisine.html">Vue cuisine</a>
+        <a class="btn btn--nav" href="stocks-du-jour.html">Stocks du jour</a>
+      </nav>
+    </header>
+
+    <main class="page-body">
+      <div class="stocks-head">
+        <div>
+          <span class="badge badge--epic">EPIC · Stocks du jour</span>
+          <h1 class="t-display page-title">Stocks des pains du jour</h1>
+          <p class="t-intro page-intro">Ajustez les quantités restantes visibles dans le catalogue client.</p>
+        </div>
+        <aside class="card sync-note">Les statuts sont visibles côté client.</aside>
+      </div>
+
+      <section class="card stocks-table">
+        <div class="stocks-cols t-label">
+          <span>Produit</span>
+          <span>Quantité restante</span>
+          <span>Ajuster</span>
+          <span>Statut catalogue</span>
+        </div>
+        <hr class="divider">
+
+        <article class="stocks-row row-alt">
+          <span class="stocks-product">Baguette tradition</span>
+          <span class="stocks-qty">24</span>
+          <div class="stepper stepper--large">
+            <button class="stepper-btn" type="button" aria-label="Diminuer">
+              <img src="assets/icon-minus.svg" alt="">
+            </button>
+            <span class="stepper-value">24</span>
+            <button class="stepper-btn" type="button" aria-label="Augmenter">
+              <img src="assets/icon-plus.svg" alt="">
+            </button>
+          </div>
+          <span class="badge badge--available">Disponible</span>
+        </article>
+
+        <article class="stocks-row row-plain">
+          <span class="stocks-product">Croissant pur beurre</span>
+          <span class="stocks-qty">12</span>
+          <div class="stepper stepper--large">
+            <button class="stepper-btn" type="button" aria-label="Diminuer">
+              <img src="assets/icon-minus.svg" alt="">
+            </button>
+            <span class="stepper-value">12</span>
+            <button class="stepper-btn" type="button" aria-label="Augmenter">
+              <img src="assets/icon-plus.svg" alt="">
+            </button>
+          </div>
+          <span class="badge badge--available">Disponible</span>
+        </article>
+
+        <article class="stocks-row row-alt">
+          <span class="stocks-product">Pain de campagne</span>
+          <span class="stocks-qty">3</span>
+          <div class="stepper stepper--large">
+            <button class="stepper-btn" type="button" aria-label="Diminuer">
+              <img src="assets/icon-minus.svg" alt="">
+            </button>
+            <span class="stepper-value">3</span>
+            <button class="stepper-btn" type="button" aria-label="Augmenter">
+              <img src="assets/icon-plus.svg" alt="">
+            </button>
+          </div>
+          <span class="badge badge--warning">Bientôt épuisé</span>
+        </article>
+
+        <article class="stocks-row row-plain">
+          <span class="stocks-product">Pain aux graines</span>
+          <span class="stocks-qty">0</span>
+          <div class="stepper stepper--large">
+            <button class="stepper-btn" type="button" aria-label="Diminuer">
+              <img src="assets/icon-minus.svg" alt="">
+            </button>
+            <span class="stepper-value">0</span>
+            <button class="stepper-btn" type="button" aria-label="Augmenter">
+              <img src="assets/icon-plus.svg" alt="">
+            </button>
+          </div>
+          <span class="badge badge--unavailable">Indisponible</span>
+        </article>
+      </section>
+
+      <div class="stocks-save">
+        <button class="btn" type="button">Enregistrer les stocks</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

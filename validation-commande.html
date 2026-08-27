@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finaliser votre commande — Les petits pains chauds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages/validation.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-brand">
+        <div class="header-brand-name">Les petits pains chauds</div>
+        <div class="header-brand-owner">Boulangerie de Floriane Teissière</div>
+      </div>
+      <nav class="header-nav">
+        <a class="btn btn--secondary btn--nav" href="index.html">Catalogue</a>
+        <a class="btn btn--secondary btn--nav" href="panier.html">Panier</a>
+        <a class="btn btn--nav" href="validation-commande.html">Commande</a>
+      </nav>
+    </header>
+
+    <main class="page-body">
+      <span class="badge badge--epic">EPIC · Commande</span>
+      <h1 class="t-display page-title">Finaliser votre commande</h1>
+      <p class="t-intro page-intro">Renseignez vos coordonnées et choisissez un créneau de retrait.</p>
+
+      <div class="checkout-layout">
+        <form class="card checkout-form" action="confirmation.html">
+          <div class="form-row">
+            <div class="form-col">
+              <label class="field-label" for="nom">Nom</label>
+              <input class="input" id="nom" name="nom" type="text" value="Charlotte Kabil">
+            </div>
+            <div class="form-col">
+              <label class="field-label" for="contact">Contact</label>
+              <input class="input" id="contact" name="contact" type="text" value="06 12 34 56 78">
+            </div>
+          </div>
+
+          <div class="form-block">
+            <label class="field-label" for="creneau">Créneau de retrait</label>
+            <input class="input" id="creneau" name="creneau" type="text" value="Aujourd’hui · 17 h 30 – 17 h 45">
+          </div>
+
+          <div class="form-block">
+            <label class="field-label" for="commentaire">Commentaire (optionnel)</label>
+            <textarea class="textarea" id="commentaire" name="commentaire">Ex. : baguettes bien cuites</textarea>
+          </div>
+
+          <p class="card--soft payment-note">Paiement à la boulangerie lors du retrait.</p>
+          <button class="btn btn--block" type="submit">Confirmer la commande</button>
+        </form>
+
+        <aside class="card checkout-recap">
+          <h2 class="t-heading checkout-recap-title">Votre commande</h2>
+          <p class="recap-line"><span>2 × Baguette tradition</span><span>2,40 €</span></p>
+          <p class="recap-line"><span>1 × Croissant pur beurre</span><span>1,40 €</span></p>
+          <p class="recap-line"><span>1 × Pain de campagne</span><span>4,80 €</span></p>
+          <hr class="divider">
+          <p class="recap-total">
+            <span class="recap-total-label">Total</span>
+            <span class="recap-total-value">8,60 €</span>
+          </p>
+          <p class="recap-pickup">Retrait aujourd’hui · créneau à confirmer</p>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

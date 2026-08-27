@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commandes du jour — Les petits pains chauds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages/cuisine.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-brand">
+        <div class="header-brand-name">Les petits pains chauds</div>
+        <div class="header-brand-owner">Boulangerie de Floriane Teissière</div>
+      </div>
+      <nav class="header-nav">
+        <a class="btn btn--nav" href="vue-cuisine.html">Vue cuisine</a>
+        <a class="btn btn--secondary btn--nav" href="stocks-du-jour.html">Stocks du jour</a>
+      </nav>
+    </header>
+
+    <main class="page-body">
+      <div class="kitchen-head">
+        <div>
+          <span class="badge badge--epic">EPIC · Vue cuisine</span>
+          <h1 class="t-display page-title">Commandes du jour</h1>
+          <p class="t-intro page-intro">Lundi 3 août · 12 commandes · dernière mise à jour 15 h 58</p>
+        </div>
+        <div class="tabs" role="tablist">
+          <button class="tab is-active" type="button">Toutes 12</button>
+          <button class="tab" type="button">À préparer 5</button>
+          <button class="tab" type="button">Prêtes 4</button>
+        </div>
+      </div>
+
+      <section class="card kitchen-table">
+        <div class="kitchen-cols t-label">
+          <span>Créneau</span>
+          <span>Référence / client</span>
+          <span>Contenu</span>
+          <span>Statut</span>
+          <span>Action</span>
+        </div>
+        <hr class="divider">
+
+        <article class="kitchen-row row-alt">
+          <span class="kitchen-slot">16 h 15</span>
+          <div>
+            <p class="kitchen-client">#LPPC-0838 · Alice R.</p>
+            <p class="kitchen-channel">Commande en ligne</p>
+          </div>
+          <span class="kitchen-content">2 baguettes · 2 croissants</span>
+          <span class="badge badge--picked">Retirée</span>
+          <button class="btn btn--disabled" type="button" disabled>Commande retirée</button>
+        </article>
+
+        <article class="kitchen-row row-plain">
+          <span class="kitchen-slot">16 h 45</span>
+          <div>
+            <p class="kitchen-client">#LPPC-0839 · Marc D.</p>
+            <p class="kitchen-channel">Commande en ligne</p>
+          </div>
+          <span class="kitchen-content">1 campagne · 1 graines</span>
+          <span class="badge badge--ready">Prête</span>
+          <button class="btn" type="button">Marquer retirée</button>
+        </article>
+
+        <article class="kitchen-row row-alt">
+          <span class="kitchen-slot">17 h 30</span>
+          <div>
+            <p class="kitchen-client">#LPPC-0842 · Charlotte K.</p>
+            <p class="kitchen-channel">Commande en ligne</p>
+          </div>
+          <span class="kitchen-content">2 baguettes · 1 croissant · 1 campagne</span>
+          <span class="badge badge--available">À préparer</span>
+          <button class="btn" type="button">Marquer prête</button>
+        </article>
+
+        <article class="kitchen-row row-plain">
+          <span class="kitchen-slot">18 h 00</span>
+          <div>
+            <p class="kitchen-client">#LPPC-0844 · Samira B.</p>
+            <p class="kitchen-channel">Commande en ligne</p>
+          </div>
+          <span class="kitchen-content">3 baguettes · 3 croissants</span>
+          <span class="badge badge--available">À préparer</span>
+          <button class="btn" type="button">Marquer prête</button>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

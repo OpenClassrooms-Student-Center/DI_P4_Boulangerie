@@ -1,0 +1,81 @@
+.confirm-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.confirm-panel {
+  width: 760px;
+  height: 580px;
+  padding: 42px 108px 0;
+  text-align: center;
+}
+
+.confirm-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 28px;
+  border-radius: 60px;
+  background: var(--bg-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.confirm-title {
+  margin: 0 auto 12px;
+  max-width: 500px;
+}
+
+.confirm-message {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0 0 36px;
+}
+
+.confirm-ref {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: left;
+  height: 116px;
+  padding: 20px 24px 24px;
+  margin-bottom: 24px;
+}
+
+.confirm-ref-label {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0 0 13px;
+}
+
+.confirm-ref-id {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.confirm-ref-time {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.confirm-note {
+  text-align: left;
+  margin: 0 0 4px;
+}
+
+.confirm-panel .btn {
+  width: 260px;
+  margin-top: 4px;
+}

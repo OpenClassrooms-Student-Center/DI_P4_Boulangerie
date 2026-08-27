@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votre panier — Les petits pains chauds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/pages/panier.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-brand">
+        <div class="header-brand-name">Les petits pains chauds</div>
+        <div class="header-brand-owner">Boulangerie de Floriane Teissière</div>
+      </div>
+      <nav class="header-nav">
+        <a class="btn btn--secondary btn--nav" href="index.html">Catalogue</a>
+        <a class="btn btn--nav" href="panier.html">Panier</a>
+        <a class="btn btn--secondary btn--nav" href="validation-commande.html">Commande</a>
+      </nav>
+    </header>
+
+    <main class="page-body">
+      <span class="badge badge--epic">EPIC · Panier</span>
+      <h1 class="t-display page-title">Votre panier</h1>
+      <p class="t-intro page-intro">Vérifiez les quantités avant de passer à la commande.</p>
+
+      <div class="cart-layout">
+        <div>
+          <section class="card cart-list">
+            <article class="cart-item row-alt">
+              <div class="cart-item-info">
+                <h2 class="cart-item-name">Baguette tradition</h2>
+                <p class="cart-item-unit">1,20 € l’unité</p>
+              </div>
+              <div class="stepper stepper--compact">
+                <button class="stepper-btn" type="button" aria-label="Diminuer">
+                  <img src="assets/icon-minus.svg" alt="">
+                </button>
+                <span class="stepper-value">2</span>
+                <button class="stepper-btn" type="button" aria-label="Augmenter">
+                  <img src="assets/icon-plus.svg" alt="">
+                </button>
+              </div>
+              <span class="cart-item-subtotal">2,40 €</span>
+            </article>
+
+            <article class="cart-item row-plain">
+              <div class="cart-item-info">
+                <h2 class="cart-item-name">Croissant pur beurre</h2>
+                <p class="cart-item-unit">1,40 € l’unité</p>
+              </div>
+              <div class="stepper stepper--compact">
+                <button class="stepper-btn" type="button" aria-label="Diminuer">
+                  <img src="assets/icon-minus.svg" alt="">
+                </button>
+                <span class="stepper-value">1</span>
+                <button class="stepper-btn" type="button" aria-label="Augmenter">
+                  <img src="assets/icon-plus.svg" alt="">
+                </button>
+              </div>
+              <span class="cart-item-subtotal">1,40 €</span>
+            </article>
+
+            <article class="cart-item row-alt">
+              <div class="cart-item-info">
+                <h2 class="cart-item-name">Pain de campagne</h2>
+                <p class="cart-item-unit">4,80 € l’unité</p>
+              </div>
+              <div class="stepper stepper--compact">
+                <button class="stepper-btn" type="button" aria-label="Diminuer">
+                  <img src="assets/icon-minus.svg" alt="">
+                </button>
+                <span class="stepper-value">1</span>
+                <button class="stepper-btn" type="button" aria-label="Augmenter">
+                  <img src="assets/icon-plus.svg" alt="">
+                </button>
+              </div>
+              <span class="cart-item-subtotal">4,80 €</span>
+            </article>
+          </section>
+
+          <a class="btn btn--secondary cart-continue" href="index.html">← Continuer mes achats</a>
+        </div>
+
+        <aside class="card cart-summary">
+          <h2 class="t-heading cart-summary-title">Résumé</h2>
+          <p class="cart-summary-line">4 articles</p>
+          <p class="cart-summary-line">
+            <span>Sous-total</span>
+            <span class="cart-summary-amount">8,60 €</span>
+          </p>
+          <hr class="divider">
+          <p class="cart-summary-total">
+            <span class="cart-summary-total-label">Total</span>
+            <span class="cart-summary-total-value">8,60 €</span>
+          </p>
+          <a class="btn btn--block" href="validation-commande.html">Valider ma commande</a>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

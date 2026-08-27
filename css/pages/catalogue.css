@@ -1,0 +1,86 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 298.5px);
+  gap: 32px;
+  width: 1290px;
+  margin-bottom: 48px;
+}
+
+.product-card {
+  width: 298.5px;
+  height: 355px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-photo {
+  width: 250.5px;
+  height: 102px;
+  border-radius: var(--radius-6);
+  object-fit: cover;
+}
+
+.product-card-name {
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-card-desc {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.product-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 17px;
+}
+
+.product-card-price {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.product-card .btn {
+  margin-top: auto;
+  width: 250.5px;
+}
+
+.info-bar {
+  display: flex;
+  align-items: center;
+  width: 1290px;
+  height: 88px;
+  padding: 16px 24px;
+}
+
+.info-bar-copy {
+  flex: 1;
+}
+
+.info-bar-title {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.info-bar-text {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.info-bar .btn {
+  width: 236px;
+  flex-shrink: 0;
+}

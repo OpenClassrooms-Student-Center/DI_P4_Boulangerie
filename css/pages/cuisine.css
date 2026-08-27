@@ -1,0 +1,77 @@
+.kitchen-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.kitchen-head .page-title {
+  margin-top: 32px;
+}
+
+.kitchen-head .page-intro {
+  margin-bottom: 0;
+}
+
+.kitchen-table {
+  width: 1290px;
+  height: 518px;
+  margin-top: 33px;
+  padding: 18px 18px 18px;
+}
+
+.kitchen-cols {
+  display: grid;
+  grid-template-columns: 146px 238px 450px 182px 1fr;
+  padding: 0 6px 17px 6px;
+}
+
+.kitchen-row {
+  display: grid;
+  grid-template-columns: 146px 238px 450px 182px 1fr;
+  align-items: center;
+  height: 96px;
+  padding: 0 16px;
+  border-radius: var(--radius-6);
+  margin-top: 16px;
+}
+
+.kitchen-row .badge{
+  margin-right: 20px;
+}
+
+.kitchen-table .divider {
+  margin: 0 0 14px;
+}
+
+.kitchen-table .divider + .kitchen-row {
+  margin-top: 0;
+}
+
+.kitchen-slot {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.kitchen-client {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.kitchen-channel {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.kitchen-content {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.kitchen-row .btn {
+  width: 212px;
+  justify-self: end;
+}
